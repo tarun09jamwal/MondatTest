@@ -44,7 +44,8 @@ public class BaseClass
         @AfterClass
         public static void Logout()
         {
-            driver.findElement(By.xpath("//a[contains(text(),'Logout')]"));
+
+            driver.findElement(By.xpath("//a[contains(text(),'Logout')]")).click();
             driver.close();
         }
 

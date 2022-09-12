@@ -4,7 +4,23 @@
     <test name="Verify admin able to search customer">
         <parameter name="browserName" value="chrome"></parameter>
         <classes>
-            <class name="Commerce.Test.SearchCustomer"/>
+            <class name="Test.TestLogin"/>
         </classes>
     </test>
+
+    <test name="Verify admin to view order">
+        <parameter name="browserName" value="chrome"></parameter>
+        <classes>
+            <class name="Test.TestOrder"/>
+        </classes>
+    </test>
+
+    <test name="Verify admin is able to view GiftsCards">
+        <parameter name="browserName" value="chrome"></parameter>
+        <classes>
+            <class name="Test.TestGiftCards"/>
+        </classes>
+    </test>
+
+
 </suite>
