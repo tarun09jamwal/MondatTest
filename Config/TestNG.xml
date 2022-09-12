@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Cases" verbose="1" >
+
+    <test name="Verify admin able to search customer">
+        <parameter name="browserName" value="chrome"></parameter>
+        <classes>
+            <class name="Commerce.Test.SearchCustomer"/>
+        </classes>
+    </test>
+</suite>
