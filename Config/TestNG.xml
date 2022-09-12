@@ -1,12 +1,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Cases" verbose="1" >
 
-<!--    <test name="Verify admin able to search customer">-->
-<!--        <parameter name="browserName" value="chrome"></parameter>-->
-<!--        <classes>-->
-<!--            <class name="Test.TestLogin"/>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name="Verify admin able to search customer">
+        <parameter name="browserName" value="chrome"></parameter>
+        <classes>
+            <class name="Test.TestLogin"/>
+        </classes>
+    </test>
 
     <test name="Verify admin to view order">
         <parameter name="browserName" value="chrome"></parameter>
@@ -14,5 +14,13 @@
             <class name="Test.TestOrder"/>
         </classes>
     </test>
+
+    <test name="Verify admin is able to view GiftsCards">
+        <parameter name="browserName" value="chrome"></parameter>
+        <classes>
+            <class name="Test.TestGiftCards"/>
+        </classes>
+    </test>
+
 
 </suite>

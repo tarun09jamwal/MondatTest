@@ -7,6 +7,7 @@ public class PageFactory
     WebDriver driver;
     private Login login;
     private Orders orders;
+    private GiftCards giftCards;
 
     public PageFactory(WebDriver driver)
     {
@@ -28,4 +29,13 @@ public class PageFactory
         }
         return orders;
     }
+    public GiftCards giftCards()
+    {
+        if(giftCards ==null)
+        {
+            giftCards = new GiftCards(driver);
+        }
+        return giftCards;
+    }
+
 }
