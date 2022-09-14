@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Cases" verbose="1" >
+<suite name="All Test Cases" verbose="1">
 
     <test name="Verify admin able to search customer">
         <parameter name="browserName" value="chrome"></parameter>
@@ -22,5 +22,21 @@
         </classes>
     </test>
 
+    <test name="Verify admin is able to check the system information">
+        <parameter name="browserName" value="chrome"></parameter>
+        <classes>
+            <class name="Test.TestSystemInformation"/>
+        </classes>
+    </test>
 
+    <test name="Verify admin is able to add and verify templates">
+        <parameter name="browserName" value="chrome"></parameter>
+        <classes>
+            <class name="Test.VerifyTemplates"/>
+        </classes>
+    </test>
+
+    <listeners>
+        <listener class-name="Reports.Listners"/>
+    </listeners>
 </suite>

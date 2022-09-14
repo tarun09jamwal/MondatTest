@@ -7,8 +7,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
-public class Orders
-{
+public class Orders {
     WebDriver driver;
     WebDriverWait wait;
     By salesDropdown = By.xpath("(//li/a[@class='nav-link'])[14]");
@@ -18,13 +17,12 @@ public class Orders
     By Search = By.xpath("//button[@id='search-orders']");
     By Logout = By.xpath("//a[contains(text(),'Logout')]");
 
-    public Orders(WebDriver driver)
-    {
+    public Orders(WebDriver driver) {
         this.driver = driver;
         wait = new WebDriverWait(driver, Duration.ofSeconds(5));
     }
-    public void Orders()
-    {
+
+    public void Orders() {
         wait.until(ExpectedConditions.elementToBeClickable(salesDropdown));
         driver.findElement(salesDropdown).click();
         wait.until(ExpectedConditions.elementToBeClickable(ordersLink));
@@ -34,7 +32,6 @@ public class Orders
         driver.findElement(Search).click();
         String actual = driver.findElement(By.xpath("//a[contains(text(),'victoria_victoria@nopCommerce.com')]")).getText();
         Assert.isTrue(actual.equals("victoria_victoria@nopCommerce.com"), "Expected result does not match with actual result");
-        System.out.println(actual);
         wait.until(ExpectedConditions.elementToBeClickable(Logout));
 
     }

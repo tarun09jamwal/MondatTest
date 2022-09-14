@@ -1,12 +1,11 @@
 package Test;
 
 import org.testng.annotations.Test;
+import java.io.IOException;
 
-public class TestOrder extends BaseClass
-{
+public class TestOrder extends BaseClass {
     @Test
-    public void UserOrder()
-    {
+    public void UserOrder() throws IOException {
         pageFactory.login().LoginButton();
         pageFactory.orders().Orders();
     }
