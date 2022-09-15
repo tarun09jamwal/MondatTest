@@ -1,0 +1,8 @@
+Test\TestGiftCards.class
+Page\PageFactory.class
+Test\TestOrder.class
+Page\Orders.class
+Page\Login.class
+Page\GiftCards.class
+Test\TestLogin.class
+Test\BaseClass.class
