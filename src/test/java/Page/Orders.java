@@ -10,7 +10,7 @@ import java.time.Duration;
 public class Orders {
     WebDriver driver;
     WebDriverWait wait;
-    By salesDropdown = By.xpath("(//li/a[@class='nav-link'])[14]");
+    By salesDropdown = By.linkText("Sales");
     By ordersLink = By.xpath("//p[contains(text(),'Orders')]");
     By Date = By.xpath("//input[@id='StartDate']");
     By BillingEmail = By.xpath("//input[@id='BillingEmail']");

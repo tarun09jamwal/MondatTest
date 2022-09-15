@@ -2,37 +2,44 @@
 <suite name="All Test Cases" verbose="1">
 
     <test name="Verify admin able to search customer">
-        <parameter name="browserName" value="chrome"></parameter>
+        <parameter name="browserName" value="Firefox"></parameter>
         <classes>
             <class name="Test.TestLogin"/>
         </classes>
     </test>
 
     <test name="Verify admin to view order">
-        <parameter name="browserName" value="chrome"></parameter>
+        <parameter name="browserName" value="Firefox"></parameter>
         <classes>
             <class name="Test.TestOrder"/>
         </classes>
     </test>
 
     <test name="Verify admin is able to view GiftsCards">
-        <parameter name="browserName" value="chrome"></parameter>
+        <parameter name="browserName" value="Firefox"></parameter>
         <classes>
             <class name="Test.TestGiftCards"/>
         </classes>
     </test>
 
     <test name="Verify admin is able to check the system information">
-        <parameter name="browserName" value="chrome"></parameter>
+        <parameter name="browserName" value="Chrome"></parameter>
         <classes>
             <class name="Test.TestSystemInformation"/>
         </classes>
     </test>
 
     <test name="Verify admin is able to add and verify templates">
-        <parameter name="browserName" value="chrome"></parameter>
+        <parameter name="browserName" value="Chrome"></parameter>
         <classes>
             <class name="Test.VerifyTemplates"/>
+        </classes>
+    </test>
+
+    <test name="Verify admin is able to check list">
+        <parameter name="browserName" value="Chrome"></parameter>
+        <classes>
+            <class name="Test.TestVerifyMenuList"/>
         </classes>
     </test>
 

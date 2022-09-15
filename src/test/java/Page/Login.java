@@ -14,9 +14,10 @@ import java.time.Duration;
 public class Login {
     WebDriver driver;
     WebDriverWait wait;
-    By login = By.xpath("//div[@class='buttons']/button");
     By UserEmail = By.xpath("//input[@id='Email']");
     By Password = By.xpath("//input[@id='Password']");
+    By login = By.xpath("//div[@class='buttons']/button");
+
 
     public Login(WebDriver driver) throws IOException {
         this.driver = driver;

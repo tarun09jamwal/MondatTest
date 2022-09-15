@@ -11,7 +11,7 @@ public class SystemInformation {
     WebDriver driver;
     WebDriverWait wait;
 
-    By SystemDropDown = By.xpath("(//li/a[@class='nav-link'])[83]");
+    By SystemDropDown = By.linkText("System");
     By SystemInformation = By.xpath("//p[contains(text(),'System information')]");
     By Templates = By.xpath("//p[contains(text(),'Templates')]");
     By Name = By.xpath("//input[@id='AddCategoryTemplate_Name']");
